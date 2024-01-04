@@ -12,7 +12,9 @@ No requirements.
 
 ## Providers
 
-No providers.
+| Name | Version |
+|------|---------|
+| <a name="provider_aws"></a> [aws](#provider\_aws) | n/a |
 
 ## Modules
 
@@ -20,15 +22,25 @@ No modules.
 
 ## Resources
 
-No resources.
+| Name | Type |
+|------|------|
+| [aws_iam_role.iam_role_s3_read](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role) | resource |
+| [aws_iam_policy_document.s3_read_policy](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document) | data source |
 
 ## Inputs
 
-No inputs.
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| <a name="input_role_name"></a> [role\_name](#input\_role\_name) | Name of the role, will result to role\_name-read-only-s3 | `string` | n/a | yes |
+| <a name="input_role_tags"></a> [role\_tags](#input\_role\_tags) | Tags to be applied to the role | `map(any)` | `{}` | no |
 
 ## Outputs
 
-No outputs.
+| Name | Description |
+|------|-------------|
+| <a name="output_role_arn"></a> [role\_arn](#output\_role\_arn) | ARN of the role |
+| <a name="output_role_id"></a> [role\_id](#output\_role\_id) | ID of the role |
+| <a name="output_role_name"></a> [role\_name](#output\_role\_name) | Name of the role |
 <!-- END_TF_DOCS -->
 
 ## Reference
